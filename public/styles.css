@@ -1,23 +1,22 @@
-.clock {
-  outline: 2px dashed red;
-  height: 35%;
-  margin: 0 auto;
-  padding: 10%;
-  text-align: center;
-}
-
-.clock .unit {
-  outline: 1px dashed blue;
-  width: 20%;
-  min-height: 100px;
-  margin: 0 auto;
-  display: inline-block;
-}
-
-.clock .unit .name, .clock .unit .number {
-  text-align: center;
-  min-height: 0;
+body {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+}
+
+.ui.four.cards>.card {
+  padding: 5%;
+  text-align: center;
+  width: 100px;
+  height: 95px;
+}
+
+.ui.header.number span {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.ui.header .sub.header {
+  font-weight: bolder;
+  font-size: 1rem;
 }
