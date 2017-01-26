@@ -10,22 +10,28 @@
 <body>
   <div class="clock">
     <div class="unit days">
-      <div class="number">1</div>
+      <div class="number" id="days"></div>
       <div class="name">Days</div>
     </div>
     <div class="unit hours">
-      <div class="number">23</div>
+      <div class="number" id="hours"></div>
       <div class="name">Hours</div>
     </div>
     <div class="unit minutes">
-      <div class="number">27</div>
+      <div class="number" id="minutes"></div>
       <div class="name">Minutes</div>
     </div>
     <div class="unit seconds">
-      <div class="number">47</div>
+      <div class="number" id="seconds"></div>
       <div class="name">Seconds</div>
     </div>
   </div>
-  <!-- <script src="clock.js"></script> -->
+  <script src="build/bundle.js"></script>
+  <script>
+    window.onload = function() {
+      c.on('tick', () => updateClock(c));
+      c.start()
+    };
+  </script>
 </body>
 </html>
