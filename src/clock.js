@@ -2,7 +2,7 @@ const { Countdown } = require('timepiece');
 const getDurationObj = require('./duration.js');
 
 // TODO: allow user to pick a time + date in the future
-const getDestinationTime = () => new Date(2017, 1, 1).valueOf(); // feb 1 2017
+const getDestinationTime = () => new Date(2017, 1, 6).valueOf(); // feb 6 2017
 const dest = getDestinationTime();
 
 const now = Date.now();
